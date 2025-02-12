@@ -5,7 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   ssr: {
-    noExternal: ['@vanilla-extract/sprinkles']
+    // uncomment this for app to run
+    // noExternal: ['@vanilla-extract/sprinkles']
   },
   plugins: [reactRouter(), vanillaExtractPlugin(), tsconfigPaths()],
 });
